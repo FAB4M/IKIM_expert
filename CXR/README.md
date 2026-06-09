@@ -1,6 +1,6 @@
 # IKIM_CXR — Chest-X-Ray-Agent
 
-Ich hoffe der Agent gefällt euch. Idee war ein Agent auf basis von Qwen, der von Subprogrammen wie einen selbst trainierten Classifiert, outputs bekommt. Qwen selbst ist unsupervised auf 20k Befundberichten trainiert. Der Classifier sup. auf 15k gelabelten CXR. In einem weiteren Schritt könnte man den Agent in Loop laufen lassen und die Subprogramm je nach Aufgabenstellung (z.B. Wo ist das Inflitrat? -> localizer), selbst aussuchen lassen. 
+Ich hoffe der Agent gefällt euch. Idee war ein Agent auf aBsis von Qwen, der von Subprogrammen wie einen selbst trainierten Classifier, outputs bekommt. Qwen selbst ist unsupervised auf 20k Befundberichten trainiert. Der Classifier sup. auf 15k gelabelten CXR. In einem weiteren Schritt könnte man den Agent in Loop laufen lassen und die Subprogramm je nach Aufgabenstellung (z.B. Wo ist das Inflitrat? -> localizer), selbst aussuchen lassen. 
 AI generated summary, pls take with a grain of salt. 
 ---
 
