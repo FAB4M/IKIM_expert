@@ -1,0 +1,721 @@
+ecg_id,prompt,target_response,qwen_agent_output
+8609,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 15
+- Estimated heart rate: 91.60305343511449
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: MI, STTC
+- Top class: MI
+- Class probabilities:
+  - NORM: 0.0028220464009791613
+  - MI: 0.8871729373931885
+  - STTC: 0.559753954410553
+  - CD: 0.1524675041437149
+  - HYP: 0.0024428197648376226
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 15
+- Estimated heart rate: 91.6 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI, STTC
+- Highest probability class: MI (myocardial infarction), probability 0.887
+
+Class probabilities:
+- MI (myocardial infarction): 0.887
+- STTC (ST/T changes): 0.560
+- CD (conduction disturbance): 0.152
+- NORM (normal ECG): 0.003
+- HYP (hypertrophy): 0.002
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction), STTC (ST/T changes).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 15
+- Estimated heart rate: 91.6 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI, STTC
+- Highest probability class: MI (myocardial infarction), probability 0.887
+
+Class probabilities:
+- MI (myocardial infarction): 0.887
+- STTC (ST/T changes): 0.560
+- CD (conduction disturbance): 0.152
+- HYP (hypertrophy): 0.002
+- NORM (normal ECG): 0.003
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction), STTC (ST/T changes).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+20699,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 61.224489795918366
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: MI
+- Top class: MI
+- Class probabilities:
+  - NORM: 2.9228358471300453e-05
+  - MI: 0.9973629117012024
+  - STTC: 0.3096354603767395
+  - CD: 0.007834859192371368
+  - HYP: 0.08292337507009506
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 61.2 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI
+- Highest probability class: MI (myocardial infarction), probability 0.997
+
+Class probabilities:
+- MI (myocardial infarction): 0.997
+- STTC (ST/T changes): 0.310
+- HYP (hypertrophy): 0.083
+- CD (conduction disturbance): 0.008
+- NORM (normal ECG): 0.000
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 61.2 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI
+- Highest probability class: MI (myocardial infarction), probability 0.997
+
+Class probabilities:
+- MI (myocardial infarction): 0.997
+- STTC (ST/T changes): 0.309
+- CD (conduction disturbance): 0.008
+- HYP (hypertrophy): 0.083
+- NORM (normal ECG): 0.000
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+7600,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 12
+- Estimated heart rate: 70.96774193548389
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: MI
+- Top class: MI
+- Class probabilities:
+  - NORM: 0.01664339192211628
+  - MI: 0.9869590401649475
+  - STTC: 0.002542125293985009
+  - CD: 0.004788883961737156
+  - HYP: 0.0007148590520955622
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 12
+- Estimated heart rate: 71.0 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI
+- Highest probability class: MI (myocardial infarction), probability 0.987
+
+Class probabilities:
+- MI (myocardial infarction): 0.987
+- NORM (normal ECG): 0.017
+- CD (conduction disturbance): 0.005
+- STTC (ST/T changes): 0.003
+- HYP (hypertrophy): 0.001
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 12
+- Estimated heart rate: 70.9 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI
+- Highest probability class: MI (myocardial infarction), probability 0.987
+
+Class probabilities:
+- MI (myocardial infarction): 0.987
+- STTC (ST/T changes): 0.003
+- CD (conduction disturbance): 0.005
+- HYP (hypertrophy): 0.001
+- NORM (normal ECG): 0.017
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+9812,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 10
+- Estimated heart rate: 61.15515288788222
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: MI, STTC
+- Top class: MI
+- Class probabilities:
+  - NORM: 0.0010583426337689161
+  - MI: 0.9074598550796509
+  - STTC: 0.6853105425834656
+  - CD: 0.015994783490896225
+  - HYP: 0.03777489811182022
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 10
+- Estimated heart rate: 61.2 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI, STTC
+- Highest probability class: MI (myocardial infarction), probability 0.907
+
+Class probabilities:
+- MI (myocardial infarction): 0.907
+- STTC (ST/T changes): 0.685
+- HYP (hypertrophy): 0.038
+- CD (conduction disturbance): 0.016
+- NORM (normal ECG): 0.001
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction), STTC (ST/T changes).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 10
+- Estimated heart rate: 61.2 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI, STTC
+- Highest probability class: MI (myocardial infarction), probability 0.907
+
+Class probabilities:
+- MI (myocardial infarction): 0.907
+- STTC (ST/T changes): 0.685
+- CD (conduction disturbance): 0.016
+- HYP (hypertrophy): 0.038
+- NORM (normal ECG): 0.001
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction), STTC (ST/T changes).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+21188,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 12
+- Estimated heart rate: 72.76736493936053
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: NORM
+- Top class: NORM
+- Class probabilities:
+  - NORM: 0.9449886083602905
+  - MI: 0.0002447493898216635
+  - STTC: 0.07319876551628113
+  - CD: 0.0004636810044758022
+  - HYP: 0.0018831922207027674
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 12
+- Estimated heart rate: 72.8 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.945
+
+Class probabilities:
+- NORM (normal ECG): 0.945
+- STTC (ST/T changes): 0.073
+- HYP (hypertrophy): 0.002
+- CD (conduction disturbance): 0.000
+- MI (myocardial infarction): 0.000
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 12
+- Estimated heart rate: 72.8 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.945
+
+Class probabilities:
+- NORM (normal ECG): 0.945
+- CD (conduction disturbance): 0.000
+- STTC (ST/T changes): 0.000
+- HYP (hypertrophy): 0.002
+- MI (myocardial infarction): 0.000
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+17369,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 14
+- Estimated heart rate: 86.95652173913044
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: MI
+- Top class: MI
+- Class probabilities:
+  - NORM: 0.001185776200145483
+  - MI: 0.9972332119941711
+  - STTC: 0.0036380309611558914
+  - CD: 0.02092151530086994
+  - HYP: 0.0036263945512473583
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 14
+- Estimated heart rate: 87.0 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI
+- Highest probability class: MI (myocardial infarction), probability 0.997
+
+Class probabilities:
+- MI (myocardial infarction): 0.997
+- CD (conduction disturbance): 0.021
+- STTC (ST/T changes): 0.004
+- HYP (hypertrophy): 0.004
+- NORM (normal ECG): 0.001
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 14
+- Estimated heart rate: 86.9 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: MI
+- Highest probability class: MI (myocardial infarction), probability 0.997
+
+Class probabilities:
+- MI (myocardial infarction): 0.997
+- STTC (ST/T changes): 0.004
+- CD (conduction disturbance): 0.021
+- HYP (hypertrophy): 0.004
+- NORM (normal ECG): 0.001
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+4362,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 13
+- Estimated heart rate: 82.85385500575374
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: NORM
+- Top class: NORM
+- Class probabilities:
+  - NORM: 0.6298645734786987
+  - MI: 0.23230016231536865
+  - STTC: 0.1259492039680481
+  - CD: 0.04672253876924515
+  - HYP: 0.07925710082054138
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 13
+- Estimated heart rate: 82.9 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.630
+
+Class probabilities:
+- NORM (normal ECG): 0.630
+- MI (myocardial infarction): 0.232
+- STTC (ST/T changes): 0.126
+- HYP (hypertrophy): 0.079
+- CD (conduction disturbance): 0.047
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 13
+- Estimated heart rate: 82.9 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.630
+
+Class probabilities:
+- NORM (normal ECG): 0.630
+- MI (myocardial infarction): 0.232
+- CD (conduction disturbance): 0.047
+- STTC (ST/T changes): 0.126
+- HYP (hypertrophy): 0.080
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+3184,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 15
+- Estimated heart rate: 89.36170212765956
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: NORM
+- Top class: NORM
+- Class probabilities:
+  - NORM: 0.8912982940673828
+  - MI: 0.02918478287756443
+  - STTC: 0.0738898441195488
+  - CD: 0.004979932215064764
+  - HYP: 0.012965399771928787
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 15
+- Estimated heart rate: 89.4 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.891
+
+Class probabilities:
+- NORM (normal ECG): 0.891
+- STTC (ST/T changes): 0.074
+- MI (myocardial infarction): 0.029
+- HYP (hypertrophy): 0.013
+- CD (conduction disturbance): 0.005
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 15
+- Estimated heart rate: 89.4 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.891
+
+Class probabilities:
+- NORM (normal ECG): 0.891
+- CD (conduction disturbance): 0.005
+- STTC (ST/T changes): 0.074
+- MI (myocardial infarction): 0.029
+- HYP (hypertrophy): 0.013
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+8856,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 59.85037406483791
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: NORM
+- Top class: NORM
+- Class probabilities:
+  - NORM: 0.9944144487380981
+  - MI: 0.00048298624460585415
+  - STTC: 0.0010933902813121676
+  - CD: 0.003655926091596484
+  - HYP: 0.0004471824213396758
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 59.9 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.994
+
+Class probabilities:
+- NORM (normal ECG): 0.994
+- CD (conduction disturbance): 0.004
+- STTC (ST/T changes): 0.001
+- MI (myocardial infarction): 0.000
+- HYP (hypertrophy): 0.000
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 59.9 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM
+- Highest probability class: NORM (normal ECG), probability 0.994
+
+Class probabilities:
+- NORM (normal ECG): 0.994
+- CD (conduction disturbance): 0.004
+- STTC (ST/T changes): 0.001
+- MI (myocardial infarction): 0.000
+- HYP (hypertrophy): 0.000
+
+3. Integrated interpretation
+- The pretrained signal classifier primarily suggests a normal ECG pattern.
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."
+12314,"You are an ECG agent. Your task is to integrate outputs from specialized ECG tools and generate a structured, cautious explanation.
+
+Important rules:
+- Do not claim this is a clinical diagnosis.
+- Explain that the rhythm tool provides rhythm features only.
+- Explain the meaning of predicted PTB-XL labels.
+- Mention uncertainty if tool outputs are limited.
+
+Tool 1: Rhythm feature tool
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 55.6199304750869
+- Rhythm regularity: likely regular
+- Scope: Rhythm feature assessment only; not a full arrhythmia diagnosis.
+
+Tool 2: Pretrained PTB-XL signal classifier
+- Predicted labels above threshold: NORM, MI
+- Top class: NORM
+- Class probabilities:
+  - NORM: 0.512355387210846
+  - MI: 0.3772503733634949
+  - STTC: 0.012330739758908749
+  - CD: 0.18956048786640167
+  - HYP: 0.12948991358280182
+
+Generate a structured ECG agent summary.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 55.6 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM, MI
+- Highest probability class: NORM (normal ECG), probability 0.512
+
+Class probabilities:
+- NORM (normal ECG): 0.512
+- MI (myocardial infarction): 0.377
+- CD (conduction disturbance): 0.190
+- HYP (hypertrophy): 0.129
+- STTC (ST/T changes): 0.012
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): NORM (normal ECG), MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis.","ECG Agent Summary
+
+1. Rhythm assessment
+- Lead used: II
+- Number of detected R-peaks: 9
+- Estimated heart rate: 55.6 bpm
+- Rhythm regularity: likely regular
+- Scope: rhythm feature extraction only; not full arrhythmia diagnosis.
+
+2. Diagnostic superclass classification
+- Predicted label(s) above threshold: NORM, MI
+- Highest probability class: NORM (normal ECG), probability 0.512
+
+Class probabilities:
+- NORM (normal ECG): 0.512
+- MI (myocardial infarction): 0.377
+- STTC (ST/T changes): 0.012
+- CD (conduction disturbance): 0.190
+- HYP (hypertrophy): 0.130
+
+3. Integrated interpretation
+- The pretrained signal classifier suggests abnormal PTB-XL superclass label(s): NORM (normal ECG), MI (myocardial infarction).
+- The rhythm feature tool provides supportive rhythm information based on R-peak detection.
+- This is a research prototype and not a clinical diagnosis."

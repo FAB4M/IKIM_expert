@@ -1,0 +1,3 @@
+run,global_step,epochs,training_loss,train_runtime_seconds,train_samples_per_second
+LoRA initial,450,2.0,0.1534679780403773,348.611,5.163
+LoRA expanded labels,450,2.0,0.15041367087099286,331.9864,5.422
