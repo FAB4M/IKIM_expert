@@ -1,7 +1,12 @@
 # IKIM_CXR — Chest-X-Ray-Agent
 
-Ich hoffe der Agent gefällt euch. Idee war ein Agent auf aBsis von Qwen, der von Subprogrammen wie einen selbst trainierten Classifier, outputs bekommt. Qwen selbst ist unsupervised auf 20k Befundberichten trainiert. Der Classifier sup. auf 15k gelabelten CXR. In einem weiteren Schritt könnte man den Agent in Loop laufen lassen und die Subprogramm je nach Aufgabenstellung (z.B. Wo ist das Inflitrat? -> localizer), selbst aussuchen lassen. 
-AI generated summary, pls take with a grain of salt. 
+Ich hoffe der Agent gefällt euch. Idee war ein Agent auf aBsis von Qwen, der von Subprogrammen wie einen selbst trainierten Classifier, outputs bekommt. Qwen selbst ist unsupervised auf 20k Befundberichten trainiert. Der Classifier sup. auf 15k gelabelten CXR. In einem weiteren Schritt könnte man den Agent in Loop laufen lassen und die Subprogramm je nach Aufgabenstellung (z.B. Wo ist das Inflitrat? -> localizer), selbst aussuchen lassen.
+
+Zentrales ipynb ist run_agent_colab.ipynb!
+
+CAVE: Es fehlen viele Datein (bspw. best_model.pt), also die weights für den Classifier und auch alle Trainigsdaten... leider 25mb pro file restriction. 
+
+AI generated summary, pls take with a grain of salt.
 ---
 
 ## Idee
@@ -292,31 +297,6 @@ Details stehen in:
 notebooks/colab_notes.md
 ```
 
----
-
-## Aktueller Stand
-
-Funktional vorhanden:
-
-* DICOM-Verarbeitung
-* eigener CXR-Classifier
-* Grad-CAM
-* optionale Anatomie-Segmentierung
-* optionale View-Erkennung
-* optionaler Support-Device-Check
-* Qwen-basierte Befundformulierung
-* lokale Tests
-* Colab-Training
-
-Noch offen:
-
-* klinische Validierung
-* robustere Evaluation auf externen Daten
-* bessere Pathologie-Lokalisation
-* Ausbau der Berichtsgenerierung
-* systematische Fehleranalyse
-
----
 
 ## Hinweis
 
